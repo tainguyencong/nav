@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $(".btn-toggle").click(function(){
+	    $(".nav-mobile").slideToggle();
+	  });
+	});
+</script>
+</head>
+<body>
+	<nav class="nav">
+		<a href="#" class="logo">Logo</a>
+		<ul>
+			<li><a href="#" class="active">Trang chủ</a></li>
+			<li><a href="#">Giới thiệu</a></li>
+			<li><a href="#">Sản phẩm</a></li>
+			<li><a href="#">Liên hệ</a></li>
+			<li><a href="#">Hỗ trợ</a></li>
+		</ul>
+		<button class="btn-toggle">=</button>
+	</nav>
+	<nav class="nav-mobile">
+		<button class="btn-toggle">=</button>
+		<ul>
+			<li><a href="#" class="active">Trang chủ</a></li>
+			<li><a href="#">Giới thiệu</a></li>
+			<li><a href="#">Sản phẩm</a></li>
+			<li><a href="#">Liên hệ</a></li>
+			<li><a href="#">Hỗ trợ</a></li>
+		</ul>
+	</nav>
+	<div id="main"></div>
+</body>
+</html>
